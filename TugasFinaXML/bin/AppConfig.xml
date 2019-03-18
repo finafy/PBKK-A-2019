@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <bean id="myLagu" class = "com.fina.app.StoneCold"></bean>
+    
+    <bean id="demi" class="com.fina.app.Penyanyi">
+			<constructor-arg ref="myLagu"></constructor-arg>
+			<property name="namaPenyanyi" value="Demi Lovato"></property>
+	    	<property name="asal" value="Amerika"></property>
+	    	<property name="agensi" value="SM Entertainment"></property>
+			 
+	</bean>
+        
+</beans>
